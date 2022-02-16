@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Мимимиметр</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Мимимиметр</h1>
+    <h2>Топ котиков</h2>
+<div th:each="cat : ${cats}" class="div1">
+    <table>
+        <tbody>
+        <tr>
+            <td><h1 th:text = "${catStat.count}"/></td>
+            <td><img th:src = "|${cat.name}.jpg|"/></td>
+            <td><h2 th:text = "${cat.name}" /></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

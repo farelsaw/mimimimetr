@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Мимимиметр</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="div1">
+  <h1>Мимимиметр</h1>
+  <h2>Кто из них мимимишнее? Кликни по фотографии!</h2>
+</div>
+
+<div class="div1">
+  <table>
+    <tbody>
+      <tr>
+        <td><a th:href = "'/select/' + ${cat1.id}"><img th:src = "|${cat1.name}.jpg|"/></a></td>
+        <td><a th:href = "'/select/' + ${cat2.id}"><img th:src = "|${cat2.name}.jpg|"/></a></td>
+      </tr>
+      <tr>
+        <td><a th:href = "'/select/' + ${cat1.id}"><h2 th:text = "${cat1.name}" /></a></td>
+        <td><a th:href = "'/select/' + ${cat2.id}"><h2 th:text = "${cat2.name}"/></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

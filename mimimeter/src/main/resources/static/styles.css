@@ -1,0 +1,35 @@
+h1{
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+h2{
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+body{
+    background-color: #212529;
+    text-align: center;
+}
+
+img {
+   width:400px;
+   height:300px;
+   object-fit:cover;
+}
+
+a{
+   text-decoration: none
+}
+
+table{
+   margin: auto;
+}
+
+td{
+   text-align: center;
+}
